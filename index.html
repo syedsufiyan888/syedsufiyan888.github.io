@@ -3,150 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Sufiyan - Portfolio</title>
-
-    <!-- Font Awesome for icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+    <title>Syed Sufiyan Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #1a1a1a; /* Dark background */
-            color: #f0f0f0; /* Light text for contrast */
+            background-color: #181818;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
         }
-        header {
-            background-color: #2e2e2e;
+
+        .card {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Gradient */
+            width: 400px;
             padding: 30px;
-            text-align: center;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #f0f0f0;
-        }
-        header .contact-info {
-            margin-top: 10px;
-        }
-        header .contact-info a {
-            color: #00bfff;
-            margin: 0 15px;
-            font-size: 1.2em;
-            text-decoration: none;
-        }
-        header .contact-info a:hover {
-            color: #f0f0f0;
-        }
-        section {
-            margin: 40px;
-            padding: 20px;
-            background-color: #2e2e2e;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-        h2 {
-            color: #00bfff;
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
             margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .card h1 {
             font-size: 1.8em;
+            margin: 0;
         }
-        p, li {
-            line-height: 1.8;
-            font-size: 1.1em;
+
+        .card h2 {
+            font-size: 1.2em;
+            color: #f0ad4e;
+            margin: 10px 0 20px;
         }
-        a {
-            color: #00bfff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .skills, .languages {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills li, .languages li {
-            margin: 8px 0;
-        }
-        footer {
+
+        .card p {
             text-align: center;
-            padding: 20px;
-            background-color: #1a1a1a;
-            color: #888;
-            font-size: 0.9em;
+            line-height: 1.5;
         }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #f0ad4e; /* Hover effect */
+        }
+
     </style>
 </head>
 <body>
 
-    <header>
+    <div class="card">
+        <!-- Add your own image here -->
+        
         <h1>Syed Sufiyan</h1>
-        <div class="contact-info">
-            <a href="https://linkedin.com/in/syedsufiyan888" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="mailto:syedsufiyan4567@gmail.com">
-                <i class="fas fa-envelope"></i> Email
-            </a>
-            
+        <h2>Web Developer</h2>
+        <p>I'm a BCA graduate with a passion for building user-friendly and functional websites. I specialize in front-end and back-end development. Let's collaborate!</p>
+        
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/syedsufiyan888" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:syedsufiyan4567@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
-    </header>
-
-    <section>
-        <h2>Summary</h2>
-        <p>
-            Recent Computer Science graduate with strong problem-solving and analytical skills, eager to apply knowledge through hands-on projects. Passionate about leveraging technology to solve real-world problems and always motivated to learn new technologies.
-        </p>
-    </section>
-
-    <section>
-        <h2>Education</h2>
-        <p><strong>Bachelor of Computer Applications (BCA)</strong> - JSS College of Arts, Commerce & Science (2021-2024) - CGPA: 8.25</p>
-        <p><strong>PUC (Science - CS)</strong> - St. Francis Pre University College (2019-2021) - Percentage: 89.16%</p>
-        <p><strong>SSLC</strong> - M. E. T. English High School (2018-2019) - Percentage: 84.48%</p>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <ul class="skills">
-            <li><i class="fas fa-code"></i> <strong>Programming Languages:</strong> PHP, CSS, HTML, C, MySQL, PYTHON (Basics)</li>
-            <li><i class="fas fa-desktop"></i> <strong>Software:</strong> Advanced MS Word, Advanced MS Excel, PowerPoint Presentation</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <p><strong>Enterprise Resource Planning</strong> - Using PHP, HTML, CSS, and MySQL (2024)</p>
-        <p>
-            This project aims to develop an ERP system designed to optimize business processes and improve operational efficiency. The system integrates finance, human resources, supply chain management, and customer relationship management into a unified platform.
-        </p>
-    </section>
-
-    <section>
-        <h2>Achievements & Awards</h2>
-        <p>Secured the 8th rank nationally in the Math Talent Hunt Exam.</p>
-    </section>
-
-    <section>
-        <h2>Languages</h2>
-        <ul class="languages">
-            <li><i class="fas fa-language"></i> English</li>
-            <li><i class="fas fa-language"></i> Kannada</li>
-            <li><i class="fas fa-language"></i> Hindi</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Declaration</h2>
-        <p>
-            I hereby confirm that the information provided above is true to my knowledge. I shall ensure that the job I will handle in your esteemed organization will be comprehensive in all its aspects.
-        </p>
-    </section>
-
-    <footer>
-        <p>© 2024 Syed Sufiyan</p>
-    </footer>
+    </div>
 
 </body>
 </html>

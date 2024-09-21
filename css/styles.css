@@ -3268,7 +3268,7 @@ img.u-pull-left {
 
 .intro-scrolldown:focus svg path,
 .intro-scrolldown:hover svg path {
-    fill : var(--color-1);
+    fill : rgb(225, 246, 176);
 }
 
 /* ------------------------------------------------------------------- 
